@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PageAlumbrado"
+             Title="4. ALUMBRADO Y SEÑALIZACIÓN">
+    <Grid Margin="20,20,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="170"  />
+            <RowDefinition Height="300" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--4.1 Luces de cruce y carretera con scroll-->
+        <ScrollView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="4.1 Luces de cruce y carretera" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="1.- Número de luces no reglamentario"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="2.- No funciona alguna luz de carretera"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="3.- No funciona alguna luz de cruce"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="4.- Situación de alguna luz no reglamentaria"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="5.- Dispositivo no homologado"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="6.- Estado de dispositivo defectuoso"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="7.- Color no reglamentario de la luz emitida"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="8.- Orientación del haz luminoso de las luces de cruce alta"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="9.- Otros defectos de orientación del haz luminoso de cruce (bajas o desviación lateral, etc.)."  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="10.- Intensidad de todas las luces de carretera que pueden encenderse simultáneamente excede de valor de referencia 100"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="11.- Al operar el mando de funcionamiento, se enciende algún otro dispositivo luminoso diferente a los reglamentariamente establecidos"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="12.- Dispositivo manual de nivelación de luces de cruce inoperante o no accesible desde el asiento del conductor"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="13.- Dispositivo lavafaros inexistente o no operativo (cuando es obligatorio)"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="14.- Fuente luminosa incompatible con el proyector"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="15.- El testigo de funcionamiento de las luces de carretera no es operativo"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="16.- No se apagan todas las luces de carretera con un solo mando"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--4.2 Luz de marcha atrás con scroll-->
+        <ScrollView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="4.2 Luz de marcha atrás" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="1.- Número de luces no reglamentario"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label   Grid.Row="0" Grid.Column="1" Text="2.- No funciona ninguna luz" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="3.- Situación no reglamentaria de alguna luz" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="4.- Dispositivo no homologado" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="5.- Estado de dispositivo defectuoso" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="6.- Color no reglamentario de la luz emitida" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="7.- Queda encendida después de haber desacoplado la marcha atrás" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="8.- Al seleccionar la marcha atrás se enciende algún otro dispositivo luminoso diferente a los reglamentariamente establecidos" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--4.3 Luces indicadoras de dirección con scroll-->
+        <ScrollView Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="4.3 Luces indicadoras de dirección." TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Text="1.- Número de luces no reglamentario"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="2.- No funciona alguna luz o la frecuencia de pulsación es tal que el efecto es próximo a la luz fija o luz apagada"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="3.- Situación de alguna luz no reglamentaria"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="4.- Dispositivo no homologado"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="5.- Estado de dispositivo defectuoso"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="6.- Color no reglamentario de la luz emitida"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="7.- Al operar el mando de funcionamiento, se enciende algún otro dispositivo luminoso diferente a los reglamentariamente establecidos"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="8.- No funciona el testigo de funcionamiento"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

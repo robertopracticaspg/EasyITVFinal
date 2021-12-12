@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PageOtros"
+             Title="10. OTROS">
+    <Grid Margin="20,20,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="150"  />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--10.1 Transporte de mercancías peligrosas con scroll-->
+        <ScrollView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="10.1 Transporte de mercancías peligrosas" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="1.- No dispone o no se encuentra en vigor el certificado de aprobación, estando el vehículo obligado a someterse a las inspecciones específicas para el transporte de mercancías peligrosas"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="2.-Pérdidas de aceite con goteo"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="3.- Defectos de estado en los anclajes"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="4.-Cableado sin aspecto de características antiparasitarias"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="5.-Defectos en la instalación eléctrica"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="6.-Defectos en la batería"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--10.2 Transporte de mercancías perecederas con scroll-->
+        <ScrollView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="10.2 Transporte de mercancías perecederas" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="1.- Vehículo con marca de identificación (pegatina) en vigor y no dispone o no se encuentra en vigor el certificado de conformidad o placa de certificación de conformidad"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label   Grid.Row="0" Grid.Column="1" Text="2.- El vehículo dispone de marca de identificación (pegatina) no en vigor" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--10.3 Transporte escolar y de menores con scroll-->
+        <ScrollView Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="10.3 Transporte escolar y de menores" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Text="1.- No cumple alguno de los requisitos técnicos indicados en el art. 4 del Real Decreto 443/2001 sobre transporte escolar y de menores"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="2.- Alguna señal V-10 inexistente o no conforme con los requisitos"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.MainPage">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="350"  />
+            <RowDefinition Height="180" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+        <!--Titulo-->
+        <Label Text="EasyITV"  TextColor="SkyBlue" FontSize="85" HorizontalOptions="Center" Grid.ColumnSpan="2" />
+        
+        <!--Imagen coche-->
+        <ScrollView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Image Source="corollaDelantero" HorizontalOptions="Center" Grid.ColumnSpan="2" />
+            </StackLayout>
+        </ScrollView>
+     
+        <!--Login-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"  />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition  Width="*" />
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <ScrollView Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Entry Placeholder=" Usuario" x:Name="txtUsuario" Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" TextColor="Black" />
+                <Entry Placeholder=" Contraseña" x:Name="txtContraseña"  Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" TextColor="Black" IsPassword="True"/>
+                <Button  Grid.Row="2" Grid.Column="0" Text="INICIAR SESIÓN" Grid.ColumnSpan="2" BackgroundColor="SkyBlue" Clicked="Button_Clicked_Inicio"/>
+                <Label Text="" x:Name="lblResultado" TextColor="Red" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" />
+            </StackLayout>
+        </ScrollView>
+        
+    </Grid>
+
+</ContentPage>

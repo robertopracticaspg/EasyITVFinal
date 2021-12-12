@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PageEmisiones"
+             Title=" 5. EMISIONES CONTAMINANTES">
+    <Grid Margin="20,20,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="200"  />
+            <RowDefinition Height="200" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--5.1 Ruido con scroll-->
+        <ScrollView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="5.1 Ruido" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="1.- El nivel de ruido producido por el vehículo es superior al permitido por la reglamentación"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="2.- Elementos supresores de ruido ausentes, modificados, en mal estado o con riesgo de desprendimiento"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--5.2 Vehículos con motor de encendido por chispas con scroll-->
+        <ScrollView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="5.2 Vehículos con motor de encendido por chispa" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="1.-Condiciones del vehículo inadecuadas para el ensayo"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label   Grid.Row="0" Grid.Column="1" Text="2.- El vehículo presenta emisiones con concentración de CO superior a lo permitido en la primera y segunda prueba" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="3.- El vehículo presenta emisiones con valor de lambda fuera del intervalo permitido en la primera y segunda prueba" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="4.-Conexión OBD no accesible o no operativa" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="5.-Lectura OBD" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--5.3 Vehículos con motor de encendido por compresión con scroll-->
+        <ScrollView Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="5.3 Vehículos con motor de encendido por compresión" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Text="1. Condiciones del vehículo inadecuadas para el ensayo"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="2. El vehículo presenta emisiones con nivel de coeficiente de absorción superior a lo permitido"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="5.-Conexión OBD no accesible o no operativa"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="6.-Lectura OBD"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

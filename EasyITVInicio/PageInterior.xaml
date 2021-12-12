@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PageInterior"
+             Title="1. ACONDICIONAMIENTO INTERIOR">
+    <Grid Margin="20,20,20,20">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="300"  />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--Asientos y sus anclajes con scroll-->
+        <ScrollView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="3.1 Asientos y sus anclajes" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="1.- En el caso de los vehículos M1 y N, el número de plazas es superior al que figura en la documentación del vehículo"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="2.- Fijación defectuosa con riesgo de desprendimiento"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="3.- Asientos inadecuados a su función o con elementos sueltos o deteriorados que presenten riesgos de lesiones"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="4.- En su caso, asientos que no permiten el acceso a las plazas posteriores."  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="5.- Inexistencia de algún reposacabezas siendo obligatorio"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="6.- El mecanismo de ajuste longitudinal del asiento del conductor no funciona adecuadamente"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Cinturones de seguridad y sus anclajes con scroll-->
+        <ScrollView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="3.2 Cinturones de seguridad y sus anclajes" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="1.-El vehículo no dispone de alguno de los cinturones de seguridad obligatorios"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label    Grid.Row="0" Grid.Column="0" Text="2.-Cinturones de seguridad de tipo distinto al reglamentario" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="3.-Cinturones no homologados" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="4.-Defectos de estado de los cinturones" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="5.-Número de puntos de anclaje no reglamentario" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="6.-Fijación defectuosa" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="7.-Defectos de estado de los anclajes" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="8.-Eliminación de algún airbag o incorporación de alguno no autorizado por el fabricante" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="9.-Algún airbag no operativo" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="10.-Existencia de elementos que impidan el normal despliegue de algún airbag" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="11.-El cuadro de mandos del vehículo indica mediante testigo o mensaje, de fallo en el funcionamiento de los sistemas electrónicos de retención." TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="12.- El sistema indica una anomalía a través de la interfaz electrónica del vehículo" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--3.3 Dispositivo de retención para niños con scroll-->
+        <ScrollView Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="3.3 Dispositivo de retención para niños." TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Text="1.- El dispositivo de retención para niños no lleva marca de homologación"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="2.- El dispositivo no está instalado correctamente"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

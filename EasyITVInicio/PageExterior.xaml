@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PageExterior"
+             Title="2. ACONDICIONAMIENTO EXTERIOR, CARROCERÍA Y CHASIS">
+    <Grid Margin="20,20,20,20" >
+        <Grid.RowDefinitions  >
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="*" />
+            
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--Antiempotramiento delantero con scroll-->
+    
+        <ScrollView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2"  >
+            <StackLayout>
+                <Label Text="2.1 Antiempotramiento delantero" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="1.- Inexistencia en vehículos obligados a llevarlo"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="2.- Defectos de estado"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="3.-Fijación defectuosa con riesgo de desprendimiento"  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+            </StackLayout>
+        </ScrollView>
+
+
+        <!--Carrocería y chasis con scroll-->
+       
+        <ScrollView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="2.2 Carrocería y chasis." TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="1.- Defectos de estado (óxidos, perforaciones, desperfectos, o inexistencia de rejilla de radiador, etc."  TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label   Grid.Row="0" Grid.Column="1" Text="2.- Anclajes de portacontenedores inexistentes o deteriorados, impidiendo su función" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="3.- Existencia de aristas vivas o cortantes" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="4.- Inexistencia del tapón del depósito de combustible o posibilidad de apertura accidental" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="5.- Elementos de la carrocería o chasis, sueltos o con fijación defectuosa (paragolpes, cubrecarter, pasos de rueda, etc.)" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="6.- En su caso, inexistencia de algún paragolpes" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="7.- Entrada de humos en el espacio destinado a ocupantes" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="8.- Defectos en la instalación eléctrica" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Label    Grid.Row="0" Grid.Column="0" Text="9.- Pérdidas de fluido en equipos auxiliares de accionamiento hidráulico" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                
+                </StackLayout>
+        </ScrollView>
+
+        <!--Dispositivos de acoplamientocon con scroll-->
+        <ScrollView Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Label Text="2.3 Dispositivos de acoplamiento" TextColor="SkyBlue" HorizontalOptions="Start"  FontSize = "30" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Text="1.- No coincidencia con los datos que figuran en la tarjeta ITV"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="2.- Defectos de estado que afecten a la seguridad"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="3.- Inexistencia o funcionamiento defectuoso o defectos de estado de la instalación eléctrica"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="4.- Fijación defectuosa con riesgo de desprendimiento"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="5.- En remolques con M.M.A ≤ 1.500 kg inexistencia del dispositivo secundario"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="6.- Manipulaciones en los dispositivos de acoplamiento"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                <Label Text="7.- Ocultación visual de la placa de matrícula o de algún dispositivo de alumbrado o señalización luminosa"  Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15" HorizontalOptions="Start" Grid.ColumnSpan="2" />
+                
+            </StackLayout>
+        </ScrollView>
+        
+        
+    </Grid>
+</ContentPage>

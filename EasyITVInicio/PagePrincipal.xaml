@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PagePrincipal"
+             Title="PAGINA PRINCIPAL">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="500"  />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <!--Mas y Camara-->
+
+        <ImageButton Source="suma" BackgroundColor="White" Grid.Row="0" Grid.Column="0" Clicked="ImageButton_Clicked_Internet"/>
+        <ImageButton Source="camara" BackgroundColor="White" Grid.Row="0" Grid.Column="1" Clicked="nextBtn_Clicked_Camara" />
+
+        <!--Lista a inspeccionar con scroll-->
+        <ScrollView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" >
+            <StackLayout>
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="0" Text="1. IDENTIFICACIÓN"  TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Identificacion"/>
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="1" Text="2. ACONDICIONAMIENTO EXTERIOR, CARROCERIA Y CHASIS" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Exterior" />
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="0" Text="3. ACONDICIONAMIENTO INTERIOR" TextColor="Black" FontSize="20"  Clicked="nextBtn_Clicked_Interior" />
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="1" Text="4. ALUMBRADO Y SEÑALIZACIÓN" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Alumbrado"/>
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="0" Text="5. EMISIONES CONTAMINANTES" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Emisiones" />
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="1" Text="6. FRENOS" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Frenos"/>
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="0" Text="7. DIRECCIÓN" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Direccion"/>
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="1" Text="8. EJES, RUEDAS, NEUMÁTICOS, SUSPENSIÓN" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Ejes"/>
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="0" Text="9. MOTOR Y TRANSMISIÓN" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Motor"/>
+                <Button BackgroundColor="White" Grid.Row="0" Grid.Column="1" Text="10. OTROS" TextColor="Black" FontSize="20" Clicked="nextBtn_Clicked_Otros"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--Boton-Imagen resultado final-->
+        <ImageButton Source="resultado"  HorizontalOptions="Center"  BackgroundColor="White" Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" Clicked="nextBtn_Clicked_Informe"/>
+    </Grid>
+</ContentPage>

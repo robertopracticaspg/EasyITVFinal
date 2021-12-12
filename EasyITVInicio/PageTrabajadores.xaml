@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PageTrabajadores"
+             Title="USUARIOS">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Perfil Roberto-->
+        <Image Source="Roberto" Grid.Row="0" Grid.Column="0" />
+        <Label Text="" Grid.Row="0" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions RowSpacing="10">
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO: Roberto" Grid.Row="0" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="Pesquera Garcia" Grid.Row="1" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="CÓDIGO: 0000" Grid.Row="2" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="PUESTO: Supervisor" Grid.Row="3" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+        </Grid>
+
+        <!-- Perfil Laura-->
+        <Image Source="fotoUsuario" Grid.Row="1" Grid.Column="0" />
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO: Laura" Grid.Row="0" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="Cáceres Criado" Grid.Row="1" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="CÓDIGO: 0001" Grid.Row="2" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="PUESTO: Directora Técnica" Grid.Row="3" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+        </Grid>
+        <!-- Perfil Marta-->
+        <Image Source="fotoUsuario" Grid.Row="2" Grid.Column="0" />
+
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO: Marta" Grid.Row="0" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="García Cáceres" Grid.Row="1" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="CÓDIGO: 0002" Grid.Row="2" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="PUESTO: Jefa de nave" Grid.Row="3" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+
+        </Grid>
+        <!-- Perfil Adrián-->
+        <Image Source="fotoUsuario" Grid.Row="3" Grid.Column="0" />
+
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO: Adrián" Grid.Row="0" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="Pérez Callejo" Grid.Row="1" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="CÓDIGO: 0003" Grid.Row="2" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+            <Label Text="PUESTO: Inspector" Grid.Row="3" Grid.Column="0" TextColor="black" HorizontalOptions="Start"/>
+        </Grid>
+        <ImageButton BackgroundColor="White" Source="casa" HorizontalOptions="Center" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Clicked="nextBtn_Clicked_Matricula"/> 
+
+
+
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyITVInicio.PageMatricula"
+             Title=" MATRICULAS">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*" x:Name="firstRow" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Datos de los vehiculos-->
+            <StackLayout 
+                Padding="5,0,5,0"
+                x:Name="s1"  
+                Grid.Row="0" Grid.Column="0" 
+                BindingContext="{x:Reference Name=s1}"  >
+
+                <Button Text="8781FVS"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_V"/>
+                <Button Text="9512GXR"
+               TextColor="Black"    
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_F"/>
+                <Button Text="0798HHR"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_M"/>
+                <Button Text="7447LBD"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_L"/>
+                <Button Text="SG0348F"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_R6"/>
+                <Button Text="E0998BBC"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_Y"/>
+                <Button Text="4588HCT"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_P"/>
+                <Button Text="7935JDT"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_A"/>
+                <Button Text="6021LBD"
+               TextColor="Black" 
+               BackgroundColor="White"
+               FontSize="29"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+                Clicked="Button_Clicked_T"/>
+
+            </StackLayout>
+            
+            <!-- Boton-Imagen flecha-->
+            <StackLayout x:Name="s2" BackgroundColor="White" Grid.Row="0" Grid.Column="1" Padding="5,0,5,0">
+                
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"      
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                       />
+                <ImageButton Source="flechaAzul1"
+                        BackgroundColor="White"  
+                        Clicked="nextBtn_Clicked_PagePrincipal"
+                             />
+
+
+            </StackLayout>
+
+        </Grid>
+  
+    </ContentPage.Content>
+</ContentPage>
